@@ -1,0 +1,13 @@
+# onlyh one chance to tell the right number
+print("welcome to the word guessing game")
+low_number = int(input("enter lower number"))
+upper_number = int(input("enter upper number"))
+random_number = random.randint(low_number, upper_number)
+
+
+guessing_number = int(input("guess a number"))
+if guessing_number == random_number:
+    print("guessed right")
+else:
+    print("guessed wrong")
+
